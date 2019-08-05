@@ -11,7 +11,7 @@
 
 <meta name="author" content="Berens JM (Arizona State University), Logan CJ (Max Planck Institute for Evolutionary Anthropology, MPI EVA, corina_logan@eva.mpg.de), Folsom M (MPI EVA), Bergeron L (University of California Santa Barbara, UCSB), McCune KB (UCSB, kelseybmccune@gmail.com)" />
 
-<meta name="date" content="2019-08-02" />
+<meta name="date" content="2019-08-05" />
 
 <title>Validating morphological condition indices and their relationship with reproductive success in great-tailed grackles</title>
 
@@ -314,7 +314,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Validating morphological condition indices and their relationship with reproductive success in great-tailed grackles</h1>
 <h4 class="author">Berens JM (Arizona State University), <a href="http://CorinaLogan.com">Logan CJ</a> (Max Planck Institute for Evolutionary Anthropology, MPI EVA, <a href="mailto:corina_logan@eva.mpg.de">corina_logan@eva.mpg.de</a>), Folsom M (MPI EVA), Bergeron L (University of California Santa Barbara, UCSB), McCune KB (UCSB, <a href="mailto:kelseybmccune@gmail.com">kelseybmccune@gmail.com</a>)</h4>
-<h4 class="date">2019-08-02</h4>
+<h4 class="date">2019-08-05</h4>
 
 </div>
 
@@ -325,7 +325,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 <p><strong><em>Click <a href="https://github.com/corinalogan/grackles/blob/master/README.md">here</a> to navigate to the version-tracked reproducible manuscript (.Rmd file)</em></strong></p>
 <div id="abstract" class="section level3">
 <h3>ABSTRACT</h3>
-<p>Morphological variation among individuals has the potential to influence multiple life history characteristics such as dispersal, migration, reproductive fitness, and survival (cite). Theoretically, individuals that are in better “condition” (measured as … ) should be able to disperse or migrate further or more successfully, have greater reproductive fitness, and survive for longer (cite). Researchers have used a variety of morphological proxy variables to quantify condition (i.e., fat score, weight, ratio of weight to tarsus length, ratio of weight to wing chord length, cite), however, there is mixed support regarding whether these proxy variables relate to life history characteristics (cite). Additionally, although some researchers use multiple morphological proxy variables for condition (cite), rarely has there been direct comparisons among proxies to validate that they measure the same trait. In this investigation, we will compare two condition proxies (fat score and the ratio of weight to tarsus length) to validate whether they measure the same trait in our study system, the great-tailed grackle (Quiscalus mexicanus). We will then test whether our morphological proxy variables correlate with reproductive success, measured as whether a female had a fledgling or not and whether a male held a territory containing nests or not. Results will improve our understanding of measures of condition in grackles, and birds in general, and the importance of condition for reproductive success - a necessary component for selection to act.</p>
+<p>Morphological variation among individuals has the potential to influence multiple life history characteristics such as dispersal, migration, reproductive fitness, and survival (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>). Theoretically, individuals that are in better “condition” (i.e. fat reserves, <span class="citation">Labocha and Hayes (2012)</span>) should be able to disperse or migrate further or more successfully, have greater reproductive fitness, and survive for longer (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>). Researchers have used a variety of morphological proxy variables to quantify condition (i.e., fat score, weight, ratio of weight to tarsus length, ratio of weight to wing chord length, <span class="citation">Labocha, Schutz, and Hayes (2014)</span>), however, there is mixed support regarding whether these proxy variables relate to life history characteristics (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>; <span class="citation">Labocha, Schutz, and Hayes (2014)</span>). Additionally, although some researchers use multiple morphological proxy variables for condition (i.e. <span class="citation">Warnock and Bishop (1998)</span>), rarely has there been direct comparisons among proxies to validate that they measure the same trait. In this investigation, we will compare two condition proxies (fat score and the ratio of weight to tarsus length) to validate whether they measure the same trait in our study system, the great-tailed grackle (Quiscalus mexicanus). We will then test whether our morphological proxy variables correlate with reproductive success, measured as whether a female had a fledgling or not and whether a male held a territory containing nests or not. Results will improve our understanding of measures of condition in grackles, and birds in general, and the importance of condition for reproductive success - a necessary component for selection to act.</p>
 </div>
 <div id="a.-state-of-the-data" class="section level3">
 <h3>A. STATE OF THE DATA</h3>
@@ -360,7 +360,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="data-collection-stopping-rule" class="section level4">
 <h4><strong>Data collection stopping rule</strong></h4>
-<p>We will stop collecting data for this project in January 2020 when the trapping season at the Tempe, Arizona field site is estimated to end.</p>
+<p>We will stop collecting data for this project in early August 2020 when research at the Tempe, Arizona field site will be finished.</p>
 </div>
 <div id="open-materials" class="section level4">
 <h4><strong>Open materials</strong></h4>
@@ -402,8 +402,16 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </ol>
 <p><strong>P2: condition and reproductive success</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Fat score (note: if the fat score and the ratio of body weight to tarsus length are positively correlated, then we will use only fat score in the model for P2. If they are not positively correlated, then we will add the ratio as an independent variable in the P2 model)</p></li>
+<li>Fat score</li>
+</ol>
+<ul>
+<li>Note 1: if the fat score and the ratio of body weight to tarsus length are positively correlated, then we will use only fat score in the model for P2. If they are not positively correlated, then we will add the ratio as an independent variable in the P2 analysis</li>
+<li>Note 2: if fat score and/or the ratio of body weight to tarsus length vary by season (breeding or non-breeding), then we will only use the data from the breeding season to ensure that less time has elapsed between the collection of condition and reproductive success variables</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
 <li><p>Temporarily held in aviaries for behavioral testing at any point during this study (yes, no)</p></li>
+<li><p>Random effect: Year (to determine whether conditions in a given breeding season similarly affected all grackle behavior and nest success)</p></li>
+<li><p>Random effect: Bird ID (because there may be multiple measures of reproductive success for each bird)</p></li>
 </ol>
 </div>
 </div>
@@ -459,7 +467,8 @@ summary(m)
     sep = &quot;,&quot;, stringsAsFactors = F)
 
 # Factor the random effect variables
-Experimenter &lt;- as.factor(d$Experimenter)
+Year &lt;- as.factor(d$Year)
+ID &lt;- as.factor(d$ID)
 
 # DATA CHECKING
 library(DHARMa)
@@ -471,7 +480,7 @@ prior = list(R = list(R1 = list(V = 1, nu = 0), R2 = list(V = 1,
 
 # Data checking for GLMM: fledglings
 simulationOutput &lt;- simulateResiduals(fittedModel = MCMCglmm(Fledglings ~ 
-    FatScore + Aviary, random = ~Experimenter, family = &quot;categorical&quot;, 
+    FatScore + Aviary, random = ~Year + ID, family = &quot;categorical&quot;, 
     data = d, verbose = F, prior = prior, nitt = 130000, thin = 10, 
     burnin = 30000), n = 250)  #250 simulations, but if want higher precision change n&gt;1000
 simulationOutput$scaledResiduals  #Expect a flat distribution of the overall residuals, and uniformity in y direction if plotted against any predictor
@@ -482,7 +491,7 @@ plot(simulationOutput)  #...there should be no pattern in the data points in the
 
 # Data checking for GLMM: territory holder
 simulationOutput &lt;- simulateResiduals(fittedModel = MCMCglmm(Territory ~ 
-    FatScore + Aviary, random = ~Experimenter, family = &quot;categorical&quot;, 
+    FatScore + Aviary, random = ~Year + ID, family = &quot;categorical&quot;, 
     data = d, verbose = F, prior = prior, nitt = 130000, thin = 10, 
     burnin = 30000), n = 250)  #250 simulations, but if want higher precision change n&gt;1000
 simulationOutput$scaledResiduals  #Expect a flat distribution of the overall residuals, and uniformity in y direction if plotted against any predictor
@@ -491,17 +500,21 @@ testZeroInflation(simulationOutput)  #compare expected vs observed zeros, not ze
 testUniformity(simulationOutput)  #check for heteroscedasticity ('a systematic dependency of the dispersion / variance on another variable in the model' Hartig, https://cran.r-project.org/web/packages/DHARMa/vignettes/DHARMa.html), which is indicated if dots aren't on the red line and p&lt;0.05. Also...
 plot(simulationOutput)  #...there should be no pattern in the data points in the right panel
 
+# Check to see whether condition variables vary by season
+fs &lt;- glm(FatScore ~ Season, family = &quot;poisson&quot;, data = d)
+bs &lt;- glm(Body ~ Season, family = &quot;poisson&quot;, data = d)
+
 # GLMM fledglings
-m1 &lt;- MCMCglmm(Fledglings ~ FatScore + Aviary, random = ~Experimenter, 
-    family = &quot;categorical&quot;, data = d, verbose = F, prior = prior, 
+m1 &lt;- MCMCglmm(Fledglings ~ FatScore + Aviary, random = ~Year + 
+    ID, family = &quot;categorical&quot;, data = d, verbose = F, prior = prior, 
     nitt = 130000, thin = 10, burnin = 30000)
 summary(m1)
 # autocorr(m1$Sol) #Did fixed effects converge?
 # autocorr(m1$VCV) #Did random effects converge?
 
 # GLMM territory holder
-m2 &lt;- MCMCglmm(Territory ~ FatScore + Aviary, random = ~Experimenter, 
-    family = &quot;categorical&quot;, data = d, verbose = F, prior = prior, 
+m2 &lt;- MCMCglmm(Territory ~ FatScore + Aviary, random = ~Year + 
+    ID, family = &quot;categorical&quot;, data = d, verbose = F, prior = prior, 
     nitt = 130000, thin = 10, burnin = 30000)
 summary(m2)
 # autocorr(m2$Sol) #Did fixed effects converge?
@@ -558,8 +571,17 @@ summary(m2)
 <div id="ref-labocha2012morphometric">
 <p>Labocha, Marta K, and Jack P Hayes. 2012. “Morphometric Indices of Body Condition in Birds: A Review.” <em>Journal of Ornithology</em> 153 (1). Springer: 1–22.</p>
 </div>
+<div id="ref-labocha2014body">
+<p>Labocha, Marta K, Heidi Schutz, and Jack P Hayes. 2014. “Which Body Condition Index Is Best?” <em>Oikos</em> 123 (1). Wiley Online Library: 111–19.</p>
+</div>
 <div id="ref-rcoreteam">
 <p>R Core Team. 2017. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org" class="uri">https://www.R-project.org</a>.</p>
+</div>
+<div id="ref-warnock1998spring">
+<p>Warnock, Nils, and Mary Anne Bishop. 1998. “Spring Stopover Ecology of Migrant Western Sandpipers.” <em>The Condor</em> 100 (3). Oxford University Press: 456–67.</p>
+</div>
+<div id="ref-wilder2016moving">
+<p>Wilder, Shawn M, David Raubenheimer, and Stephen J Simpson. 2016. “Moving Beyond Body Condition Indices as an Estimate of Fitness in Ecological and Evolutionary Studies.” <em>Functional Ecology</em> 30 (1). Wiley Online Library: 108–15.</p>
 </div>
 </div>
 </div>
