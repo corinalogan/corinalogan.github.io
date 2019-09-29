@@ -11,7 +11,7 @@
 
 <meta name="author" content="McCune KB (University of California Santa Barbara, UCSB, kelseybmccune@gmail.com), Folsom M (Max Planck Institute for Evolutionary Anthropology, MPI EVA), Ross C (MPI EVA), Bergeron L (UCSB), Logan CJ (MPI EVA, corina_logan@eva.mpg.de)" />
 
-<meta name="date" content="2019-08-06" />
+<meta name="date" content="2019-09-29" />
 
 <title>Does great-tailed grackle space use behavior reflect individual differences in exploration?</title>
 
@@ -314,7 +314,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Does great-tailed grackle space use behavior reflect individual differences in exploration?</h1>
 <h4 class="author">McCune KB (University of California Santa Barbara, UCSB, <a href="mailto:kelseybmccune@gmail.com">kelseybmccune@gmail.com</a>), Folsom M (Max Planck Institute for Evolutionary Anthropology, MPI EVA), Ross C (MPI EVA), Bergeron L (UCSB), <a href="http://CorinaLogan.com">Logan CJ</a> (MPI EVA, <a href="mailto:corina_logan@eva.mpg.de">corina_logan@eva.mpg.de</a>)</h4>
-<h4 class="date">2019-08-06</h4>
+<h4 class="date">2019-09-29</h4>
 
 </div>
 
@@ -325,39 +325,39 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 <p><strong><em>Click <a href="https://github.com/corinalogan/grackles/blob/master/README.md">here</a> to navigate to the version-tracked reproducible manuscript (.Rmd file)</em></strong></p>
 <div id="abstract" class="section level3">
 <h3>ABSTRACT</h3>
-<p>This is one of the first studies planned for our long-term research on the role of behavioral flexibility in rapid geographic range expansions. <strong>Project background:</strong> Behavioral flexibility, the ability to change behavior when circumstances change based on learning from previous experience (<span class="citation">Mikhalevich, Powell, and Logan (2017)</span>), is thought to play an important role in a species’ ability to successfully adapt to new environments and expand its geographic range (e.g., <span class="citation">Lefebvre et al. (1997)</span>, <span class="citation">(A. S. Griffin and Guez 2014)</span>, <span class="citation">Chow, Lea, and Leaver (2016)</span>, <span class="citation">Sol and Lefebvre (2000)</span>, <span class="citation">Sol, Timmermans, and Lefebvre (2002)</span>, <span class="citation">Sol et al. (2005)</span>). However, behavioral flexibility is rarely directly tested at the individual level, thus limiting our ability to determine how it relates to other traits, which limits the power of predictions about a species’ ability to adapt behavior to new environments. We use great-tailed grackles (Quiscalus mexicanus, a bird species) as a model to investigate this question because they have rapidly expanded their range into North America over the past 140 years (<span class="citation">Wehtje (2003)</span>, <span class="citation">Peer (2011)</span>) (see an overview of the <a href="https://github.com/corinalogan/grackles/blob/master/README.md">5-year project timeline</a>). <strong>This investigation:</strong> In this piece of the long-term project we aim to understand whether experimental measures of exploration reflect space use behavior of wild grackles. Exploration, measured in a separate [preregistration] (<a href="http://corinalogan.com/Preregistrations/g_exploration.html" class="uri">http://corinalogan.com/Preregistrations/g_exploration.html</a>), is interpreted as an individual’s response to novelty, such as novel environments or novel objects (<span class="citation">Réale et al. (2007)</span>), to gather information that does not satisfy immediate needs (<span class="citation">Mettke-Hofmann, Winkler, and Leisler (2002)</span>). We will measure the space use behavior of wild grackles using radio telemetry to find color-banded birds and record spatial locations over time with GPS. These results will inform whether individual differences in space use behavior are associated with consistent individual differences in exploration, which could be subject to selection, and thus relate to dispersal behaviors influencing this species’ range expansion within populations. Furthermore, if space use behavior correlates with experimental measures of exploration, then space use could be used to inform conservation management strategies (e.g., which individuals are likely to remain in new or restored habitat after a translocation (<span class="citation">May, Page, and Fleming (2016)</span>) in species where it is not logistically feasible to experimentally measure exploration. Traditional studies of animal movement behavior require spatial and temporal independence of data points for statistical analysis (<span class="citation">Swihart and Slade (1985)</span>). However, spatial and temporal autocorrelation (where individuals are found in the same locations over time, such that subsequent relocations are predictable based on previous space use) is an intrinsic component of animal behavior and eliminating it can reduce biological relevance (<span class="citation">Dray, Royer-Carenzi, and Calenge (2010)</span>, e.g., animal movement behavior is influenced by the available habitat and resources which are distributed non-randomly across the landscape). Therefore, in addition to using a typical measure of space use, home range size, we propose to test a novel measure of exploratory behavior in wild grackles using spatial autocorrelation of step lengths (distance between two sequential observations) in our movement data.</p>
+<p>This is one of the first studies planned for our long-term research on the role of behavioral flexibility in rapid geographic range expansions. <strong>Project background:</strong> Behavioral flexibility, the ability to change behavior when circumstances change based on learning from previous experience (<span class="citation">Mikhalevich, Powell, and Logan (2017)</span>), is thought to play an important role in a species’ ability to successfully adapt to new environments and expand its geographic range (e.g., <span class="citation">Lefebvre et al. (1997)</span>, <span class="citation">A. S. Griffin and Guez (2014)</span>, <span class="citation">Chow, Lea, and Leaver (2016)</span>, <span class="citation">Sol and Lefebvre (2000)</span>, <span class="citation">Sol, Timmermans, and Lefebvre (2002)</span>, <span class="citation">Sol et al. (2005)</span>). However, behavioral flexibility is rarely directly tested at the individual level, thus limiting our ability to determine how it relates to other traits, which limits the power of predictions about a species’ ability to adapt behavior to new environments. We use great-tailed grackles (Quiscalus mexicanus, a bird species) as a model to investigate this question because they have rapidly expanded their range into North America over the past 140 years (<span class="citation">Wehtje (2003)</span>, <span class="citation">Peer (2011)</span>) (see an overview of the <a href="https://github.com/corinalogan/grackles/blob/master/README.md">5-year project timeline</a>). <strong>This investigation:</strong> In this piece of the long-term project we aim to understand whether experimental measures of exploration are associated with space use behavior in wild grackles. Exploration, measured in a separate <a href="http://corinalogan.com/Preregistrations/g_exploration.html">preregistration</a>, is interpreted as an individual’s response to novelty, such as novel environments or novel objects (<span class="citation">Réale et al. (2007)</span>), to gather information that does not satisfy immediate needs (<span class="citation">Mettke-Hofmann, Winkler, and Leisler (2002)</span>). We will measure the space use behavior of wild grackles using radio telemetry to find color-banded grackles and record spatial locations across time using GPS. These results will inform whether individual differences in space use behavior are associated with consistent individual differences in exploration, which could be subject to selection, and thus relate to dispersal behaviors influencing this species’ range expansion within populations. Furthermore, if space use behavior correlates with experimental measures of exploration, then space use could be used to inform conservation management strategies (e.g., which individuals are likely to remain in new or restored habitat after a translocation (<span class="citation">May, Page, and Fleming (2016)</span>) in species where it is not logistically feasible to experimentally measure exploration. Traditional studies of animal movement behavior require spatial and temporal independence of data points for statistical analysis (<span class="citation">Swihart and Slade (1985)</span>). However, spatial and temporal autocorrelation (where individuals are found in the same locations across time, such that subsequent relocations are predictable based on previous space use) is an intrinsic component of animal behavior and eliminating it can reduce biological relevance (<span class="citation">Dray, Royer-Carenzi, and Calenge (2010)</span>, e.g., animal movement behavior is influenced by the available habitat and resources which are distributed non-randomly across the landscape). Therefore, in addition to using a typical measure of space use, home range size, we propose two new methods for analyzing wild grackle exploratory behaviors. The first will describe individual differences in movement behavior by analyzing autocorrelation of step length (distance between two sequential observations) and turning angle for each individual over time (<span class="citation">Pacheco-Cobos et al. (2019)</span>), while the second will describe individual differences in spatial preferences by analyzing the repeatability of each individual’s occurrence in particular geographic locations.</p>
 </div>
 <div id="a.-state-of-the-data" class="section level3">
 <h3>A. STATE OF THE DATA</h3>
-<p>This preregistration uses secondary data: data that are already being collected for other purposes (GPS points in hypothesis 3 and home range sizes in prediction 3 in the <a href="http://corinalogan.com/Preregistrations/g_flexforaging.html">flexibility and foraging</a> preregistration). This preregistration was written in June 2019, while at the same time increasing the number of GPS points taken per time per bird to provide enough data for the analyses here.</p>
+<p>This preregistration uses secondary data: data that are already being collected for other purposes (GPS points in hypothesis 3 and home range sizes in prediction 3 in the <a href="http://corinalogan.com/Preregistrations/g_flexforaging.html">flexibility and foraging</a> preregistration). This preregistration was written in June 2019, while at the same time increasing the number of GPS points taken per time per bird to provide enough data for the analyses here, and submitted in September 2019 to PCI Ecology for pre-study peer review.</p>
 </div>
 <div id="b.-hypotheses" class="section level3">
 <h3>B. HYPOTHESES</h3>
-<div id="h1-individual-differences-in-measures-of-exploration-using-novel-environment-and-novel-object-tasks-see-separate-preregistration-are-related-to-variation-in-space-use-measured-via-home-range-size-and-whether-individuals-are-predictably-found-in-the-same-locations-temporal-autocorrelation-of-step-lengths." class="section level4">
-<h4>H1: Individual differences in measures of exploration using novel environment and novel object tasks (see separate <a href="http://corinalogan.com/Preregistrations/g_exploration.html">preregistration</a>) are related to variation in space use, measured via home range size, and whether individuals are predictably found in the same locations (temporal autocorrelation of step lengths).</h4>
-<p><strong>Prediction 1:</strong> The more exploratory grackles that get closer or make more touches to the novel object and novel environment will be found in a larger expanse (home range size), and a greater variety (low autocorrelation of step lengths) of spatial locations. This suggests that exploratory individuals are more willing to move into novel areas in the wild.</p>
-<p><strong>Prediction 1 alternative 1:</strong> The more exploratory grackles that get closer or make more touches to the novel object and novel environment will use a smaller amount of space (home range size), and have less variety in spatial locations. This suggests that more exploratory individuals may be able to more efficiently use habitat within their home range. For example, in great tits, the slow-exploring phenotype relates to more in-depth investigatory behaviors towards changes in the local environment <span class="citation">(Verbeek, Drent, and Wiepkema 1994)</span>, switching to utilization of different resources in the same area <span class="citation">(Overveld and Matthysen 2009)</span>, and better problem-solving abilities <span class="citation">(Cole and Quinn 2011)</span>. Therefore it may not be necessary for these individuals to move into new areas for resources such as food or mating opportunities.</p>
-<p><strong>Prediction 1 alternative 2:</strong> Only performance on the novel environment task will correlate positively with space use (home range size) in the wild. This suggests that perception of, and behavioral interactions with, novel environments (spatial information) differs from that used for novel objects <span class="citation">(Mettke-Hofmann et al. 2009)</span>.</p>
-<p><strong>Prediction 1 alternative 3:</strong> Only performance on the novel object task will correlate positively with space use (home range size) in the wild. This suggests that, in these urban populations, space use may primarily be driven by grackles searching for novel objects that represent human-provided sources of food.</p>
-<p><strong>Prediction 1 alternative 4:</strong> There will be no correlation between an individual’s proximity or touches to the novel object or novel environment and their home range size. This suggests that the experimental measures of exploration either are not relevant enough to how grackles use space in the wild to be able to measure the same trait, or they are independent of home range size potentially because the individuals tracked are adults and are already familiar with their home range and surrounding areas and thus do not need to further explore it as if it was novel.</p>
+<div id="h1-individual-differences-in-measures-of-exploration-using-novel-environment-and-novel-object-tasks-see-separate-preregistration-are-related-to-variation-in-space-use-measured-via-home-range-size-autocorrelation-of-step-lengths-and-turning-angles-or-whether-individuals-are-predictably-found-in-the-same-locations." class="section level4">
+<h4>H1: Individual differences in measures of exploration using novel environment and novel object tasks (see separate <a href="http://corinalogan.com/Preregistrations/g_exploration.html">preregistration</a>) are related to variation in space use (measured via home range size, autocorrelation of step lengths and turning angles, or whether individuals are predictably found in the same locations).</h4>
+<p><strong>Prediction 1:</strong> The more exploratory grackles that get closer or make more touches to the novel object and novel environment will be found in a larger expanse (home range size), use less predictable movement patterns (low autocorrelation of step lengths), and occupy a greater variety of spatial locations. This suggests that exploratory individuals are more willing to move into novel areas in the wild.</p>
+<p><strong>Prediction 1 alternative 1:</strong> The more exploratory grackles that get closer or make more touches to the novel object and novel environment will use a smaller amount of space (home range size), use predictable movement patterns (high autocorrelation of step lengths), and consistently occupy the same spatial locations. This suggests that more exploratory individuals may be able to more efficiently use habitat within their home range. For example, in great tits, the slow-exploring phenotype relates to more in-depth investigatory behaviors towards changes in the local environment <span class="citation">(Verbeek, Drent, and Wiepkema 1994)</span>, switching to utilization of different resources in the same area <span class="citation">(Overveld and Matthysen 2009)</span>, and better problem-solving abilities <span class="citation">(Cole and Quinn 2011)</span>. Therefore it may not be necessary for these individuals to move into new areas for resources such as food or mating opportunities.</p>
+<p><strong>Prediction 1 alternative 2:</strong> Only performance on the novel environment task will correlate positively with space use behavior in the wild. This suggests that perception of, and behavioral interactions with, novel environments (spatial information) differs from that used for novel objects <span class="citation">(Mettke-Hofmann et al. 2009)</span>.</p>
+<p><strong>Prediction 1 alternative 3:</strong> Only performance on the novel object task will correlate positively with space use behavior in the wild. This suggests that, in these urban populations, space use may primarily be driven by grackles searching for novel objects that represent human-provided sources of food.</p>
+<p><strong>Prediction 1 alternative 4:</strong> There will be no correlation between an individual’s proximity or touches to the novel object or novel environment and their space use behavior. This suggests that the experimental measures of exploration either are not relevant enough to how grackles use space in the wild to be able to measure the same trait, or they are independent of space use behavior potentially because the individuals tracked are adults and are already familiar with their home range and surrounding areas and thus do not need to further explore it as if it was novel.</p>
 </div>
 <div id="h2-space-use-behavior-will-vary-among-grackles-from-our-three-study-populations-located-along-different-points-in-the-geographic-range-of-this-species-core-middle-of-expansion-and-range-edge." class="section level4">
 <h4>H2: Space use behavior will vary among grackles from our three study populations located along different points in the geographic range of this species (core, middle of expansion, and range edge).</h4>
-<p><strong>Prediction 2:</strong> Home range sizes will increase and autocorrelation of step lengths will decrease (grackles will use a greater variety of locations) as the geographic distance from the original center of the range increases. Specifically, grackles on the edge of the range (likely northern California), will have larger overall home range sizes, and use a greater variety of spatial locations than grackles in the core of the range (Central America), and grackles in the middle of the expanded range will be intermediary in space use (Arizona). This suggests that range expansion likely occurs as a result of individual differences in space use: the individuals with the larger home range sizes will be on the leading edge of the range expansion <span class="citation">(Duckworth and Badyaev 2007)</span>.</p>
-<p><strong>Prediction 2 alternative 1:</strong> Grackles on the edge of the range will have smaller overall home range sizes and use a smaller variety of spatial locations than grackles in the middle or core of the current range. This suggests that suitable habitat may be distributed in small patches, that there may be higher predation on grackles that use more space, or that individual grackles specialize on certain novel habitat types that are patchily distributed.</p>
-<p><strong>Prediction 2 alternative 2:</strong> There is no difference across the geographic range in the space use behavior of grackles. This suggests that, on average, all grackles use the same amount of space, or that there is a similar distribution of individual differences in space use at each population.</p>
+<p><strong>Prediction 2:</strong> Home range sizes will increase, autocorrelation of step lengths and turning angles will decrease (grackle movement behavior will be less predictable), and grackles will use a greater variety of spatial locations as the geographic distance from the original center of the range increases. Specifically, grackles on the edge of the range (Northern California), will have larger overall home range sizes, exhibit more variety in step lengths and turning angles, and use a greater variety of spatial locations than grackles in the core of the range (Central America). Grackles in the middle of the expanded range will be intermediate in space use (Arizona). This suggests that range expansion likely occurs as a result of individual differences in space use: the individuals on the leading edge of the range expansion show more exploratory movement behavior <span class="citation">(Duckworth and Badyaev 2007)</span>.</p>
+<p><strong>Prediction 2 alternative 1:</strong> Grackles on the edge of the range will have smaller overall home range sizes, high autocorrelation in step length and turning angle (movement behavior will be more predictable), and consistently use the same spatial locations compared to grackles in the middle or core of the current range. This suggests that suitable habitat may be distributed in small patches, there may be higher predation on grackles that use more space, and/or individual grackles specialize on certain novel habitat types that are patchily distributed.</p>
+<p><strong>Prediction 2 alternative 2:</strong> There is no difference across the geographic range in the space use behavior of grackles. This suggests that, on average, all grackles use the same amount of space, or that there is a similar distribution of individual differences in space use in each population.</p>
 </div>
 </div>
 <div id="c.-methods" class="section level3">
 <h3>C. METHODS</h3>
 <div id="planned-sample" class="section level4">
 <h4><strong>Planned Sample</strong></h4>
-<p>Great-tailed grackles are caught in the wild and given colored leg bands in unique combinations for individual identification. Some individuals (~60) are brought temporarily into aviaries where we experimentally measure exploration, and then they are released back to the wild. Grackles are individually housed in an aviary (each 244cm long by 122cm wide by 213cm tall) for a maximum of six months where they have ad lib access to water at all times and are fed Mazuri Small Bird maintenance diet ad lib during non-testing hours (minimum 20h per day), and various other food items (e.g., peanuts, grapes, crackers) during testing (up to 3h per day per bird). Individuals are given three to four days to habituate to the aviaries and then their test battery begins on the fourth or fifth day (birds are usually tested six days per week, therefore if their fourth day in the aviaries occurs on a day off, then they are tested on the fifth day instead). Before release, all grackles are fitted with VHF radio tags (model A2455 by Advanced Telemetry Systems or model BD-2 by Holohil Systems Ltd.) so we can track space use behavior with radio telemetry. Radio tags are attached to the grackles by gluing them to their backs (<span class="citation">(Johnson and Peer 2001)</span>, <span class="citation">(Mong and Sandercock 2007)</span>) or by using a leg loop harness (methods as in <span class="citation">Rappole and Tipton (1991)</span>) made from sutures (Vicryl undyed 36in sutures, item number D9389 at eSutures.com; 0.5mm diameter, absorbable so they fall off after a few months).</p>
-<p>After release, an experimenter tracks each tagged grackle for approximately 1.5 hours each day, taking a GPS point every 1 minute or every 10 minutes (we will determine the sampling interval that gives the best resolution), regardless of whether the bird moved <span class="citation">(Cushman, Chase, and Griffin 2005)</span>.Researchers are careful to not get too close so that they do not change the bird’s behavior.</p>
+<p>Great-tailed grackles are caught in the wild and given colored leg bands in unique combinations for individual identification. Some individuals (~60) are brought temporarily into aviaries where we experimentally measure exploration, and then they are released back to the wild. Grackles are individually housed in an aviary (each 244cm long by 122cm wide by 213cm tall) for a maximum of six months where they have ad lib access to water. Grackles are fed Mazuri Small Bird maintenance diet ad lib during non-testing hours (minimum 20h per day), and various other food items (e.g., peanuts, grapes, crackers) during testing (up to 4h per day per bird). Individuals are given three to four days to habituate to the aviaries and then their test battery begins on the fourth or fifth day (birds are usually tested six days per week, therefore if their fourth day in the aviaries occurs on a day off, then they are tested on the fifth day instead). Before release, all grackles are fitted with VHF radio tags (model A2455 by Advanced Telemetry Systems or model BD-2 by Holohil Systems Ltd.) so we can track space use behavior using radio telemetry. Radio tags are attached to the grackles by gluing them to their backs (<span class="citation">Johnson and Peer (2001)</span>, <span class="citation">Mong and Sandercock (2007)</span>) or by using a leg loop harness (methods as in <span class="citation">Rappole and Tipton (1991)</span>) made from sutures (Vicryl undyed 36in sutures, item number D9389 at eSutures.com; 0.5mm diameter, absorbable so they fall off after a few months).</p>
+<p>After release, an experimenter tracks each tagged grackle for approximately 1.5 hours on a given day, taking a GPS point every 1 minute or every 10 minutes (we will determine the sampling interval that gives the best resolution), regardless of whether the bird moved <span class="citation">(Cushman, Chase, and Griffin 2005)</span>. Researchers are careful not to get too close so as not to influence the grackle’s behavior.</p>
 </div>
 <div id="sample-size-rationale" class="section level4">
 <h4><strong>Sample size rationale</strong></h4>
-<p>We test as many birds as we can in the approximately five years of this study given that the birds are only brought into the aviaries during the non-breeding season (approximately September through March). The minimum sample size for captive subjects will be 57 across the three sites. We catch grackles with a variety of methods, some of which decrease the likelihood of a selection bias for exploratory and bold individuals because grackles cannot see the traps (i.e., mist nets). Once released, we primarily track the space use behavior of the grackles that were in the aviary, but we also collect GPS point locations on all occasions that we see any color-marked bird so we can determine if grackles that were previously in the aviary have different space use behavior after their release.</p>
+<p>We test as many birds as we can in the approximately five years of this study given that the birds are only brought into the aviaries during the non-breeding season (approximately September through March). The minimum sample size for captive subjects will be 57 across the three sites. We catch grackles with a variety of methods, some of which decrease the likelihood of a selection bias for exploratory and bold individuals because grackles cannot see the traps (i.e., mist nets). Once released, we primarily track the space use behavior of the grackles that were in the aviary, but we also collect GPS point locations on all occasions that we see any color-marked bird so we can determine whether grackles that were previously in the aviary have different space use behavior from non-aviary-held grackles after their release.</p>
 </div>
 <div id="data-collection-stopping-rule" class="section level4">
 <h4><strong>Data collection stopping rule</strong></h4>
@@ -365,7 +365,11 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="open-materials" class="section level4">
 <h4><strong>Open materials</strong></h4>
-<p>Testing protocols: <a href="https://docs.google.com/document/d/1sEMc5z2fw6S9C-wVfc2zV331CRPpu3NuA7IhSFUZJpE/edit?usp=sharing">Exploration protocol</a> for exploration of new environments and objects, boldness, persistence, and motor diversity. <a href="https://docs.google.com/document/d/1jtjgeWJoZ0Q1CfUpV6zdkyQL3p3WfW9KgyLrMNmNMJc/edit?usp=sharing">Radio tracking protocol</a> for attaching radio tags and following birds using radio telemetry.</p>
+<p>Testing protocols:</p>
+<ul>
+<li><a href="https://docs.google.com/document/d/1sEMc5z2fw6S9C-wVfc2zV331CRPpu3NuA7IhSFUZJpE/edit?usp=sharing">Exploration protocol</a> for exploration of new environments and objects, boldness, persistence, and motor diversity.</li>
+<li><a href="https://docs.google.com/document/d/1jtjgeWJoZ0Q1CfUpV6zdkyQL3p3WfW9KgyLrMNmNMJc/edit?usp=sharing">Radio tracking protocol</a> for attaching radio tags and collecting GPS points using radio telemetry.</li>
+</ul>
 </div>
 <div id="open-data" class="section level4">
 <h4><strong>Open data</strong></h4>
@@ -373,7 +377,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="randomization-and-counterbalancing" class="section level4">
 <h4><strong>Randomization and counterbalancing</strong></h4>
-<p>There is no randomization in this investigation. The order of the exploration tasks is counterbalanced across birds as in this [separate preregistration] (<a href="http://corinalogan.com/Preregistrations/g_exploration.html" class="uri">http://corinalogan.com/Preregistrations/g_exploration.html</a>). The time of day that we collect GPS point locations is counterbalanced within and across birds to account for variation in movement behavior arising from daily circadian rhythms.</p>
+<p>There is no randomization in this investigation. The order of the exploration tasks is counterbalanced across birds as in this <a href="http://corinalogan.com/Preregistrations/g_exploration.html">separate preregistration</a>. The time of day that we collect GPS point locations is counterbalanced within and across birds to account for variation in movement behavior arising from daily circadian rhythms.</p>
 </div>
 <div id="blinding-of-conditions-during-analysis" class="section level4">
 <h4><strong>Blinding of conditions during analysis</strong></h4>
@@ -381,34 +385,36 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="dependent-variables" class="section level4">
 <h4><strong>Dependent variables</strong></h4>
-<p><strong>P1 - P2</strong></p>
+<p><strong>P1-P2</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Home range size: an estimate calculated with the minimum convex polygon technique, which consists of the smallest polygon to enclose all GPS location points for an individual grackle during its normal activities <span class="citation">(C. Calenge 2011)</span>. Because we are interested in the exploratory movements of grackles, we will not exclude any outlier GPS locations.</p></li>
-<li><p>Amount of autocorrelation of successive GPS point locations</p></li>
+<li><p>Home range size (square meters): an estimate calculated with the minimum convex polygon technique, which consists of the smallest polygon to enclose all GPS location points for an individual grackle during its normal activities <span class="citation">(C. Calenge 2011)</span>. Because we are interested in the exploratory movements of grackles, we will not exclude any outlier GPS locations.</p></li>
+<li><p>Autocorrelation of step length (meters): measured as the standard deviation of step lengths (the distance between two sequential GPS points)</p></li>
+<li><p>Autocorrelation of turning angle (degrees): measured as the standard deviation of turning angles</p></li>
+<li><p>Spatial location preference: measured as the repeatability of grackle occurrence in a given cell of a 5 x 5m grid array across the landscape</p></li>
 </ol>
 <p>One model will be run for each dependent variable</p>
 </div>
 <div id="independent-variables" class="section level4">
 <h4><strong>Independent variables</strong></h4>
-<p><strong>P1 and P1 alternative 2 - 4</strong></p>
+<p><strong>P1 and P1 alternatives 2-4</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Exploration of novel environment: Latency to approach to 20cm of a novel environment set inside a familiar environment - OR - closest approach distance to a novel environment set inside a familiar environment (choose the variable with the most data)</p></li>
-<li><p>Exploration of novel object: Latency to land on the table next to an object (novel, familiar) (that does not contain food) in a familiar environment (that contains maintenance diet away from the object) - OR - latency to touch an object (novel, familiar) (choose the variable with the most data)</p></li>
+<li><p>Exploration of novel environment: Latency to approach to 20cm of a novel environment (that does not contain food) set inside a familiar environment (that contains maintenance diet away from the object) - OR - closest approach distance to the novel environment (choose the variable with the most data)</p></li>
+<li><p>Exploration of novel object: Latency to approach to 20cm of an object (novel or familiar, that does not contain food) in a familiar environment (that contains maintenance diet away from the object) - OR - closest approach distance to the object (choose the variable with the most data)</p></li>
 <li><p>Sex: Male or female</p></li>
 <li><p>Condition: Whether the grackle was only ever in the wild or whether it had been temporarily held in aviaries before data collection on space use</p></li>
 </ol>
 <p><strong>P1 alternative 1</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Exploration of novel environment: Latency to approach to 20cm of a novel environment set inside a familiar environment - OR - closest approach distance to a novel environment set inside a familiar environment (choose the variable with the most data)</p></li>
-<li><p>Exploration of novel object: Latency to land on the table next to an object (novel, familiar) (that does not contain food) in a familiar environment (that contains maintenance diet away from the object) - OR - latency to touch an object (novel, familiar) (choose the variable with the most data)</p></li>
-<li><p>Problem-solving performance: Measured as performance on multi-access box tasks described in this [separate preregistration] (<a href="http://corinalogan.com/Preregistrations/g_flexmanip.html" class="uri">http://corinalogan.com/Preregistrations/g_flexmanip.html</a>)</p></li>
-<li><p>Number of different foods eaten and foraging techniques used: Measured during focal follow observations on wild grackles, described in this [separate preregistration] (<a href="http://corinalogan.com/Preregistrations/g_flexforaging.html" class="uri">http://corinalogan.com/Preregistrations/g_flexforaging.html</a>)</p></li>
+<li><p>Exploration of novel environment: Latency to approach to 20cm of a novel environment (that does not contain food) set inside a familiar environment (that contains maintenance diet away from the object) - OR - closest approach distance to the novel environment (choose the variable with the most data)</p></li>
+<li><p>Exploration of novel object: Latency to approach to 20cm of an object (novel or familiar, that does not contain food) in a familiar environment (that contains maintenance diet away from the object) - OR - closest approach distance to the object (choose the variable with the most data)</p></li>
+<li><p>Problem-solving performance: Measured as performance on multi-access box tasks described in this <a href="http://corinalogan.com/Preregistrations/g_flexmanip.html">separate preregistration</a></p></li>
+<li><p>Number of different foods eaten and foraging techniques used: Measured during focal follow observations on wild grackles, described in this <a href="http://corinalogan.com/Preregistrations/g_flexforaging.html">separate preregistration</a></p></li>
 <li><p>Sex: Male or female</p></li>
 <li><p>Condition: Whether the grackle was only ever in the wild or whether it had been temporarily held in aviaries before data collection on space use</p></li>
 </ol>
 <p><strong>P2</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Site: Whether the grackle was from our study population located on the edge of the range (most likely Northern California), the population in the center of the original range (Central America), or the population in the center of the current expanded range (Arizona).</p></li>
+<li><p>Site: Whether the grackle was from our study population located on the edge of the range (Northern California), the center of the original range (Central America), or the center of the current expanded range (Arizona).</p></li>
 <li><p>Sex: Male or female</p></li>
 <li><p>Condition: Whether the grackle was only ever in the wild or whether it had been temporarily held in aviaries before data collection on space use</p></li>
 </ol>
@@ -416,10 +422,64 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="d.-analysis-plan" class="section level3">
 <h3>D. ANALYSIS PLAN</h3>
-<p>We do not plan to <strong>exclude</strong> any data and no data are <strong>missing</strong>. Analyses will be conducted in R (current version 3.5.2; <span class="citation">R Core Team (2017)</span>).</p>
-<div id="scaffold-of-the-statistical-model-we-will-use-for-analysis" class="section level4">
-<h4><em>Scaffold of the statistical model we will use for analysis</em></h4>
-<p>These scripts and code are available at <a href="https://github.com/ctross/grackleator" class="uri">https://github.com/ctross/grackleator</a>.</p>
+<p>We do not plan to <strong>exclude</strong> any data and no data are <strong>missing</strong>. Analyses will be conducted in R (current version 3.5.2; <span class="citation">R Core Team (2017)</span>) and Stan (version 2.18, <span class="citation">Carpenter et al. (2017)</span>).</p>
+<p>We will first verify that the GPS point locations on each bird result in asymptotic convergence as in <span class="citation">Leo et al. (2016)</span>. To calculate our dependent variables we will use the minimum convex polygon method for estimating home range size (in square meters) using the R packages adehabitatHR <span class="citation">(Calenge 2006)</span> and sf <span class="citation">(Pebesma 2018)</span>. Minimum convex polygons are widely used to estimate home range size and they only include points within the areas used by the animal during “normal activities” <span class="citation">(C. Calenge 2011)</span>. Therefore, outlier relocation detections are usually excluded. We are interested in all exploratory movements by grackles, so we will not exclude any outlier relocations.</p>
+<p>From the GPS point locations collected on each individual, we will use a Bayesian model (detailed below) to estimate the following parameters: mean and dispersion (variance) of step lengths and turning angles for each bird on each daily track (<span class="citation">Pacheco-Cobos et al. (2019)</span>). We will determine whether these parameters governing movement are stable (or variable) within individuals across days. A small variance would indicate there is low variability (high repeatability) in the daily movement behaviors of the individual.</p>
+<p>Moreover, we will determine whether grackles show individual differences in consistent use of habitat by overlaying a grid array across the landscape. We will then create matrices describing the number of times a grackle was observed in each cell on each day. High autocorrelation among daily matrices indicates a low-exploring individual that frequents the same spatial locations across days.</p>
+<p>We will then model the relationship between bird-specific data on performance at our exploration tasks (and other covariates), and bird-specific movement parameters (e.g. step-size, turning angle, autocorrelation in space use).</p>
+<div id="calculating-home-range-size" class="section level4">
+<h4><em>Calculating home range size</em></h4>
+<pre class="r"><code># Load packages
+library(adehabitatHR)
+library(sf)
+
+# Point to the correct data file and load it
+setwd(&quot;~/Documents/Grackle project/Space use&quot;)
+
+pts &lt;- read.csv(&quot;gtgr_points.csv&quot;, header = T)
+
+# Set variables to ensure the models read the data properly
+pts$Latitude = as.numeric(as.character(pts$Latitude))
+pts$Longitude = as.numeric(as.character(pts$Longitude))
+pts$Date = as.character(pts$Date)
+pts$Time = as.character(pts$Time)
+pts$da.ti = as.POSIXct(paste(pts$Date, pts$Time), format = &quot;%Y-%m-%d %H:%M:%S&quot;)
+
+### Home range size can only be calculated when a bird has more
+### than 5 relocations Count the number of relocations for each
+### bird, then exclude individuals with less than 6
+tmp = pts
+tmp$count = 1
+tmp = aggregate(count ~ Bird.Name, FUN = &quot;sum&quot;, data = tmp)
+pts.min = merge(pts, tmp, by = &quot;Bird.Name&quot;, all = T)
+pts.min = pts.min[-which(pts.min$count &lt; 6), ]
+pts.min$Bird.Name = as.factor(as.character(pts.min$Bird.Name))
+
+### Convert dataframe to Spatial file type
+p.sf &lt;- st_as_sf(pts.min, coords = c(&quot;Longitude&quot;, &quot;Latitude&quot;), 
+    crs = 4326)
+class(p.sf)
+p.spatial &lt;- as(p.sf, &quot;Spatial&quot;)
+class(p.spatial)
+
+### Calculate home range in square meters for each individual,
+### excluding no outliers (percent = 100)
+hr = mcp(p.spatial[1], percent = 100, unout = &quot;m2&quot;)
+plot(hr)
+hr = as.data.frame(hr)
+
+### Normalize data for regression model
+hist(log(hr$area))
+
+### Make data sheet with the experimental exploration measures
+### combined with the home range measures
+exp &lt;- read.csv(&quot;Explore_combined.csv&quot;, header = T)
+hr_exp = merge(exp, hr, by = &quot;id&quot;, all = T)
+write.csv(hr_exp, &quot;space_use.csv&quot;)</code></pre>
+</div>
+<div id="code-to-create-functions-for-analyzing-movement-behaviors" class="section level4">
+<h4><em>Code to create functions for analyzing movement behaviors</em></h4>
+<p>All scripts and code are available at <a href="https://github.com/ctross/grackleator" class="uri">https://github.com/ctross/grackleator</a>.</p>
 <pre class="r"><code>### gracklenomial.R
 gracklenomial &lt;- function(GrackBins){
 model_dat_2=list(
@@ -946,6 +1006,9 @@ for(j in 1:MaxTrip){
     PsiB &lt;- c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
     OmegaB &lt;- 15
     EtaB &lt;- 2</code></pre>
+</div>
+<div id="modeling-bird-movement-behaviors-step-length-turning-angle-spatial-location-preference" class="section level4">
+<h4><em>Modeling bird movement behaviors: step length, turning angle, spatial location preference</em></h4>
 <pre class="r"><code># This is an R package for modeling bird movement (available
 # at https://github.com/ctross/grackleator)
 
@@ -1021,64 +1084,53 @@ image(matrix(get_posterior_mean(m3, pars = &quot;A&quot;), nrow = 15, ncol = 15)
 # Plot bird-specific parameters
 grackleations(m3)</code></pre>
 </div>
-<div id="p1-analysis" class="section level4">
-<h4><em>P1 analysis</em></h4>
-<p>We will first verify that the GPS point locations on each bird result in asymptotic convergence as in <span class="citation">Leo et al. (2016)</span>. To calculate our dependent variables we will use the minimum convex polygon method for estimating home range size (in hectares) using the R packages adehabitatHR <span class="citation">(Calenge 2006)</span> and sf <span class="citation">(Pebesma 2018)</span>. Minimum convex polygon is widely used to estimate home range size and only includes points within the areas used by the animal during “normal activities” <span class="citation">(C. Calenge 2011)</span>. Therefore, outlier relocation detections are usually excluded. We are interested in all exploratory movements by grackles, so we will not exclude any outlier relocations.</p>
-<p>For our second dependent variable, we will quantify the amount of daily autocorrelation in the GPS point locations collected on each individual by comparing Mantel correlograms of a matrix describing distance in space to a matrix of distance in time <span class="citation">(Cushman, Chase, and Griffin 2005)</span>.</p>
-<p>We will determine if the amount of daily autocorrelation is significantly repeatable within individuals across days by dividing our data into 24-hr time periods for each bird and calculating autocorrelation of movement within a day using Mantel correlogram analysis as above. Then we will use Pearson’s product moment correlation to compare space use across the correlograms for each time period. We will use a Monte-Carlo permutation procedure to determine whether the correlation coefficient describing the daily similarity in movement behavior is significantly different from chance <span class="citation">(Cushman, Chase, and Griffin 2005)</span>.</p>
-<p>If movement behavior is repeatable, then we will use the average autocorrelation value for each individual to model the relationship with performance at our exploration tasks and as a function of study site location.</p>
-</div>
 <div id="h1-p1---exploration-measured-in-captivity-relates-to-space-use-behavior" class="section level4">
 <h4><em>H1: P1 - Exploration measured in captivity relates to space use behavior</em></h4>
-<pre class="r"><code># Load packages
-library(adehabitatHR)
-library(sf)
+<pre class="r"><code>data &lt;- read.csv(&quot;Space_use.csv&quot;, header = T)
 
-# Point to the correct data file and load it
-setwd(&quot;~/Documents/Grackle project/Space use&quot;)
+# Home range 
+m1 = lm(log(area) ~ ExpObj + ExpEnv + Sex + Condition, data = data)
+hist(m1$resid)
+summary(m1)
 
-pts &lt;- read.csv(&quot;gtgr_points.csv&quot;, header = T)
-pts &lt;- pts[, -c(4:6, 8:10)]
+# Step length 
+m2 = lm(log(std_step)) ~ ExpObj + ExpEnv + Sex + Condition, data = data)
+hist(m2$resid)
+summary(m2)
 
-# Set variables to ensure the models read the data properly
-pts$Latitude = as.numeric(as.character(pts$Latitude))
-pts$Longitude = as.numeric(as.character(pts$Longitude))
-pts$Date = as.character(pts$Date)
-pts$Time = as.character(pts$Time)
-pts$da.ti = as.POSIXct(paste(pts$Date, pts$Time), format = &quot;%Y-%m-%d %H:%M:%S&quot;)
+# Turning angle
+m3 = lm(log(std_angle)) ~ ExpObj + ExpEnv + Sex + Condition, data = data)
+hist(H3$resid)
+summary(m3)
 
-### Home range size can only be calculated when a bird has more
-### than 5 relocations Count the number of relocations for each
-### bird, then exclude individuals with less than 6
-tmp = pts
-tmp$count = 1
-tmp = aggregate(count ~ Bird.Name, FUN = &quot;sum&quot;, data = tmp)
-pts.min = merge(pts, tmp, by = &quot;Bird.Name&quot;, all = T)
-pts.min = pts.min[-which(pts.min$count &lt; 6), ]
-pts.min$Bird.Name = as.factor(as.character(pts.min$Bird.Name))
+# Spatial preferences
+m4 = lm(log(loc_pref)) ~ ExpObj + ExpEnv + Sex + Condition, data = data)
+hist(H4$resid)
+summary(m4)</code></pre>
+</div>
+<div id="h2-p2---space-use-behaviors-vary-among-populations-across-the-range" class="section level4">
+<h4><em>H2: P2 - Space use behaviors vary among populations across the range</em></h4>
+<pre class="r"><code>data &lt;- read.csv(&quot;Space_use.csv&quot;, header = T)
 
-### Convert dataframe to Spatial file type
-p.sf &lt;- st_as_sf(pts.min, coords = c(&quot;Longitude&quot;, &quot;Latitude&quot;), 
-    crs = 4326)
-class(p.sf)
-p.spatial &lt;- as(p.sf, &quot;Spatial&quot;)
-class(p.spatial)
+# Home range 
+m1 = lm(log(area) ~ Site + Sex + Condition, data = data)
+hist(m1$resid)
+summary(m1)
 
-### Calculate home range in square meters for each individual,
-### excluding outliers
-hr = mcp(p.spatial[1], percent = 100, unout = &quot;m2&quot;)
-plot(hr)
-hr = as.data.frame(hr)
+# Step length
+m2 = lm(log(std_step)) ~ Site + Sex + Condition, data = data)
+hist(m2$resid)
+summary(m2)
 
-### Normalize data for regression model
-hist(log(hr$area))
+# Turning angle
+m3 = lm(log(std_angle)) ~ Site + Sex + Condition, data = data)
+hist(m3$resid)
+summary(m3)
 
-exp &lt;- read.csv(&quot;Explore_combined.csv&quot;, header = T)
-hr_exp = merge(exp, hr, by = &quot;id&quot;, all = T)
-
-H1 = lm(log(area) ~ ExpObj + ExpEnv + Sex + Condition, data = hr_exp)
-hist(H1$resid)
-summary(H1)</code></pre>
+# Spatial preference
+m4 = lm(log(loc_pref)) ~ Site + Sex + Condition, data = data)
+hist(m4$resid)
+summary(m4)</code></pre>
 </div>
 </div>
 <div id="e.-ethics" class="section level3">
@@ -1109,7 +1161,7 @@ summary(H1)</code></pre>
 </div>
 <div id="j.-acknowledgements" class="section level3">
 <h3>J. ACKNOWLEDGEMENTS</h3>
-<p>We thank Ben Trumble for providing us with a wet lab at Arizona State University and Angela Bond for lab support; Melissa Wilson Sayres for sponsoring our affiliations at Arizona State University and lending lab equipment; Kevin Langergraber for serving as local PI on the ASU IACUC; Kristine Johnson for technical advice on great-tailed grackles; Arizona State University School of Life Sciences Department Animal Care and Technologies for providing space for our aviaries and for their excellent support of our daily activities; Julia Cissewski for tirelessly solving problems involving financial transactions and contracts; Richard McElreath for project support; and our research assistants: Aelin Mayer, Nancy Rodriguez, Brianna Thomas, Aldora Messinger, Elysia Mamola, Michael Guillen, Rita Barakat, Adriana Boderash, Olateju Ojekunle, August Sevchik, Justin Huynh, Jennifer Berens, Michael Pickett and Amanda Overholt.</p>
+<p>We thank Melissa Wilson Sayres for sponsoring our affiliations at Arizona State University; Kevin Langergraber for serving as local PI on the ASU IACUC; Kristine Johnson for technical advice on great-tailed grackles; Julia Cissewski for tirelessly solving problems involving financial transactions and contracts; Richard McElreath for project support; and our research assistants: Aldora Messinger, Elysia Mamola, Michael Guillen, Rita Barakat, Adriana Boderash, Olateju Ojekunle, August Sevchik, Justin Huynh, Jennifer Berens, Michael Pickett and Amanda Overholt.</p>
 </div>
 <div id="k-references" class="section level3 unnumbered">
 <h3>K <a href="MyLibrary.bib">REFERENCES</a></h3>
@@ -1119,6 +1171,9 @@ summary(H1)</code></pre>
 </div>
 <div id="ref-calenge2006package">
 <p>Calenge, Clément. 2006. “The Package ‘Adehabitat’ for the R Software: A Tool for the Analysis of Space and Habitat Use by Animals.” <em>Ecological Modelling</em> 197 (3-4). Elsevier: 516–19.</p>
+</div>
+<div id="ref-carpenter2017stan">
+<p>Carpenter, Bob, Andrew Gelman, Matthew D Hoffman, Daniel Lee, Ben Goodrich, Michael Betancourt, Marcus Brubaker, Jiqiang Guo, Peter Li, and Allen Riddell. 2017. “Stan: A Probabilistic Programming Language.” <em>Journal of Statistical Software</em> 76 (1). Columbia Univ., New York, NY (United States); Harvard Univ., Cambridge, MA ….</p>
 </div>
 <div id="ref-chow2016practice">
 <p>Chow, Pizza Ka Yee, Stephen EG Lea, and Lisa A Leaver. 2016. “How Practice Makes Perfect: The Role of Persistence, Flexibility and Learning in Problem-Solving Efficiency.” <em>Animal Behaviour</em> 112. Elsevier: 273–83.</p>
@@ -1164,6 +1219,9 @@ summary(H1)</code></pre>
 </div>
 <div id="ref-van2009personality">
 <p>Overveld, Thijs van, and Erik Matthysen. 2009. “Personality Predicts Spatial Responses to Food Manipulations in Free-Ranging Great Tits (Parus Major).” <em>Biology Letters</em> 6 (2). The Royal Society: 187–90.</p>
+</div>
+<div id="ref-pacheco2019nahua">
+<p>Pacheco-Cobos, Luis, Bruce Winterhalder, Cecilia Cuatianquiz-Lima, Marcos F Rosetti, Robyn Hudson, and Cody T Ross. 2019. “Nahua Mushroom Gatherers Use Area-Restricted Search Strategies That Conform to Marginal Value Theorem Predictions.” <em>Proceedings of the National Academy of Sciences</em> 116 (21). National Acad Sciences: 10339–47.</p>
 </div>
 <div id="ref-pebesma2018simple">
 <p>Pebesma, Edzer. 2018. “Simple Features for R: Standardized Support for Spatial Vector Data.” <em>The R Journal</em> 10 (1): 439–46.</p>
