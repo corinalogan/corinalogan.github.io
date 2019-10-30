@@ -11,7 +11,7 @@
 
 <meta name="author" content="Berens JM (Arizona State University), Logan CJ (Max Planck Institute for Evolutionary Anthropology, MPI EVA, corina_logan@eva.mpg.de), Folsom M (MPI EVA), Bergeron L (University of California Santa Barbara, UCSB), McCune KB (UCSB, kelseybmccune@gmail.com)" />
 
-<meta name="date" content="2019-08-05" />
+<meta name="date" content="2019-10-30" />
 
 <title>Validating morphological condition indices and their relationship with reproductive success in great-tailed grackles</title>
 
@@ -314,7 +314,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Validating morphological condition indices and their relationship with reproductive success in great-tailed grackles</h1>
 <h4 class="author">Berens JM (Arizona State University), <a href="http://CorinaLogan.com">Logan CJ</a> (Max Planck Institute for Evolutionary Anthropology, MPI EVA, <a href="mailto:corina_logan@eva.mpg.de">corina_logan@eva.mpg.de</a>), Folsom M (MPI EVA), Bergeron L (University of California Santa Barbara, UCSB), McCune KB (UCSB, <a href="mailto:kelseybmccune@gmail.com">kelseybmccune@gmail.com</a>)</h4>
-<h4 class="date">2019-08-05</h4>
+<h4 class="date">2019-10-30</h4>
 
 </div>
 
@@ -325,7 +325,7 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 <p><strong><em>Click <a href="https://github.com/corinalogan/grackles/blob/master/README.md">here</a> to navigate to the version-tracked reproducible manuscript (.Rmd file)</em></strong></p>
 <div id="abstract" class="section level3">
 <h3>ABSTRACT</h3>
-<p>Morphological variation among individuals has the potential to influence multiple life history characteristics such as dispersal, migration, reproductive fitness, and survival (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>). Theoretically, individuals that are in better “condition” (i.e. fat reserves, <span class="citation">Labocha and Hayes (2012)</span>) should be able to disperse or migrate further or more successfully, have greater reproductive fitness, and survive for longer (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>). Researchers have used a variety of morphological proxy variables to quantify condition (i.e., fat score, weight, ratio of weight to tarsus length, ratio of weight to wing chord length, <span class="citation">Labocha, Schutz, and Hayes (2014)</span>), however, there is mixed support regarding whether these proxy variables relate to life history characteristics (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>; <span class="citation">Labocha, Schutz, and Hayes (2014)</span>). Additionally, although some researchers use multiple morphological proxy variables for condition (i.e. <span class="citation">Warnock and Bishop (1998)</span>), rarely has there been direct comparisons among proxies to validate that they measure the same trait. In this investigation, we will compare two condition proxies (fat score and the ratio of weight to tarsus length) to validate whether they measure the same trait in our study system, the great-tailed grackle (Quiscalus mexicanus). We will then test whether our morphological proxy variables correlate with reproductive success, measured as whether a female had a fledgling or not and whether a male held a territory containing nests or not. Results will improve our understanding of measures of condition in grackles, and birds in general, and the importance of condition for reproductive success - a necessary component for selection to act.</p>
+<p>Morphological variation among individuals has the potential to influence multiple life history characteristics such as dispersal, migration, reproductive success, and survival (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>). Research has shown that individuals that are in better “condition” can disperse or migrate further or more successfully, have greater reproductive success, and survive for longer (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>; <span class="citation">(<span class="citeproc-not-found" data-reference-id="heidinger2010patch"><strong>???</strong></span>)</span>; <span class="citation">(<span class="citeproc-not-found" data-reference-id="liao2011fat"><strong>???</strong></span>)</span>), particularly in years where environmental conditions are harsh (<span class="citation">(<span class="citeproc-not-found" data-reference-id="milenkaya2015success"><strong>???</strong></span>)</span>). An individual’s body condition can be defined in various ways, but is most often considered an individual’s energetic or immune state (<span class="citation">(<span class="citeproc-not-found" data-reference-id="milenkaya2015success"><strong>???</strong></span>)</span>). Since these traits are hard to measure directly, researchers have instead used a variety of morphological proxy variables to quantify condition such as fat score (<span class="citation">Kaiser (1993)</span>), weight, ratio of weight to tarsus length (<span class="citation">Labocha, Schutz, and Hayes (2014)</span>), a scaled mass index (<span class="citation">(<span class="citeproc-not-found" data-reference-id="pieg2009new"><strong>???</strong></span>)</span>), as well as hematological indices for immune system function (<span class="citation">(<span class="citeproc-not-found" data-reference-id="fleskes2017body"><strong>???</strong></span>)</span>, <span class="citation">(<span class="citeproc-not-found" data-reference-id="kraft2019developmental"><strong>???</strong></span>)</span>). However, there is mixed support regarding whether these condition indices relate to life history characteristics (<span class="citation">Wilder, Raubenheimer, and Simpson (2016)</span>; <span class="citation">Labocha, Schutz, and Hayes (2014)</span>), and whether the relationship shows a linear trend (<span class="citation">McNamara et al. (2005)</span>; <span class="citation">(<span class="citeproc-not-found" data-reference-id="milenkaya2015success"><strong>???</strong></span>)</span>). Additionally, although some researchers use multiple morphological proxy variables for condition (i.e. <span class="citation">Warnock and Bishop (1998)</span>), rarely has there been direct comparisons among proxies to validate that they measure the same trait. In this investigation, we will define condition as represented by an individual’s energetic state to compare two indices (fat score and the scaled mass index) to validate whether they measure the same trait in our study system, the great-tailed grackle <em>(Quiscalus mexicanus)</em>. We will then test whether our morphological proxy variables correlate with reproductive success, measured as whether a female had a fledgling (or not) and whether a male held a territory containing nests (or not). Results will improve our understanding of measures of condition in grackles, and birds in general, and the importance of condition for reproductive success - a necessary component for selection to act.</p>
 </div>
 <div id="a.-state-of-the-data" class="section level3">
 <h3>A. STATE OF THE DATA</h3>
@@ -333,30 +333,30 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="b.-hypotheses" class="section level3">
 <h3>B. HYPOTHESES</h3>
-<div id="h1-there-is-a-relationship-between-two-different-morphological-indices-of-condition-fat-score-and-the-ratio-of-body-weight-to-tarsus-length." class="section level4">
-<h4>H1: There is a relationship between two different morphological indices of condition: fat score and the ratio of body weight to tarsus length.</h4>
-<p><strong>Prediction 1:</strong> Fat score and the ratio of weight to tarsus length will be positively correlated. This would indicate that these two indices measure the same trait, and it is likely they both are proxies for fat content.</p>
-<p><strong>Prediction 1 alternative 1:</strong> There is a negative correlation between fat score and the ratio of weight to tarsus length. This would indicate that there may be a tradeoff between the two indices where a higher weight to tarsus length ratio may measure muscle content rather than fat, and individuals with more muscle have less visible fat.</p>
-<p><strong>Prediction 1 alternative 2:</strong> There is no correlation between fat score and the ratio of weight to tarsus length. This indicates that these two variables do not measure the same trait. Fat score may not adequately capture a bird’s condition because birds may be selected to only store the minimal fat necessary to prevent starvation, while also minimizing the weight gain that would make them easier targets for predators (<span class="citation">Barnett et al. (2015)</span>). Similarly, the ratio of weight to tarsus length has been shown to be heavily influenced by body size, therefore reflecting structural size rather than fat storage (<span class="citation">Labocha and Hayes (2012)</span>).</p>
+<div id="h1-there-is-a-relationship-between-two-different-morphological-indices-of-condition-fat-score-and-the-scaled-mass-index." class="section level4">
+<h4>H1: There is a relationship between two different morphological indices of condition: fat score and the scaled mass index.</h4>
+<p><strong>Prediction 1:</strong> Fat score and the scaled mass index will be positively correlated. This would indicate that these two indices measure the same trait, and it is likely they both are proxies for fat content.</p>
+<p><strong>Prediction 1 alternative 1:</strong> There is a negative correlation between fat score and the scaled mass index. This would indicate that there may be a tradeoff between the two indices where a larger value of the scaled mass index may measure muscle content rather than fat, and individuals with more muscle have less visible fat.</p>
+<p><strong>Prediction 1 alternative 2:</strong> There is no correlation between fat score and the scaled mass index. This indicates that these two variables do not measure the same trait. Fat score may not adequately capture a bird’s condition because birds may be selected to only store the minimal fat necessary to prevent starvation, while also minimizing the weight gain that would make them easier targets for predators (<span class="citation">Barnett et al. (2015)</span>). Similarly, the scaled mass index could be heavily influenced by body size, therefore reflecting structural size rather than fat storage (<span class="citation">Labocha and Hayes (2012)</span>).</p>
 </div>
-<div id="h2-condition-as-measured-by-fat-score-and-the-ratio-of-weight-to-tarsus-length-relates-to-reproductive-success-measured-as-a-binary-variable-of-whether-a-female-had-one-or-more-fledglings-1-or-not-0-and-whether-a-male-defended-a-territory-containing-nests-1-or-not-0." class="section level4">
-<h4>H2: Condition (as measured by fat score and the ratio of weight to tarsus length) relates to reproductive success (measured as a binary variable of whether a female had one or more fledglings (1) or not (0), and whether a male defended a territory containing nests (1) or not (0)).</h4>
-<p><strong>Prediction 2:</strong> Morphological indices of condition (fat score and the ratio of weight to tarsus length) will correlate positively with reproductive success. This would indicate that individuals with more fat, and therefore higher energy reserves, are better able to acquire the resources necessary for reproduction.</p>
-<p><strong>Prediction 2 alternative 1:</strong> Morphological indices of condition (fat score and the ratio of weight to tarsus length) will correlate negatively with reproductive success. This indicates that individuals may make trade offs, with some acquiring more food and increasing their energy reserves, and others prioritizing reproductive activities over increasing energy reserves.</p>
-<p><strong>Prediction 2 alternative 2:</strong> Morphological indices of condition (fat score and the ratio of weight to tarsus length) do not correlate with reproductive success. This indicates that other, potentially non-morphological, individual characteristics relate to reproductive success (i.e., cognition, nest site selection, breeding experience, predator vigilance, etc.).</p>
+<div id="h2-condition-as-measured-by-fat-score-and-the-scaled-mass-index-relates-to-reproductive-success-measured-as-a-binary-variable-of-whether-a-female-had-one-or-more-fledglings-1-or-not-0-and-whether-a-male-defended-a-territory-containing-nests-1-or-not-0." class="section level4">
+<h4>H2: Condition (as measured by fat score and the scaled mass index) relates to reproductive success (measured as a binary variable of whether a female had one or more fledglings (1) or not (0), and whether a male defended a territory containing nests (1) or not (0)).</h4>
+<p><strong>Prediction 2:</strong> Morphological indices of condition (fat score and the scaled mass index) will correlate positively with reproductive success. This would indicate that individuals with more fat, and therefore higher energy reserves, are better able to acquire the resources necessary for reproduction.</p>
+<p><strong>Prediction 2 alternative 1:</strong> Morphological indices of condition (fat score and the scaled mass index) will correlate negatively with reproductive success. This indicates that individuals may make trade offs, with some acquiring more food and increasing their energy reserves, and others prioritizing reproductive activities over increasing energy reserves.</p>
+<p><strong>Prediction 2 alternative 2:</strong> Morphological indices of condition (fat score and the scaled mass index) do not correlate with reproductive success. This indicates that other, potentially non-morphological, individual characteristics relate to reproductive success (i.e., cognition, nest site selection, breeding experience, predator vigilance, etc.).</p>
 </div>
 </div>
 <div id="c.-methods" class="section level3">
 <h3>C. METHODS</h3>
 <div id="planned-sample" class="section level4">
 <h4><strong>Planned Sample</strong></h4>
-<p>Great-tailed grackles are caught in the wild in Tempe, Arizona using a variety of methods (e.g., walk-in trap, bownet, mist net). After capture we immediately process birds by attaching colored leg bands in unique combinations for individual identification, conducting morphological measurements of weight, tarsus and wing chord length; tail, skull, and bill length and fat score (the amount of visible fat under the skin in the clavicle and abdomen as in <span class="citation">Kaiser (1993)</span>). Most grackles are released after completion of color band marking, measurements, and acquiring a blood sample. A subset of grackles are held in aviaries for up to 6 months for behavioral testing, and then released back to the wild at their location of capture.</p>
-<p>From March - August, we monitor the behavior of all color-marked grackles to determine their nesting status. We follow females carrying nesting materials to find their nest, then we check each nest approximately every day to determine the status (building, incubation, nestlings, fledglings, failed).</p>
-<p>Individuals included in this sample will be those for which we have measures of condition when they were adults. We will not include individuals whose data were collected as juveniles. As of 30 July 2019, we have fledgling data for 14 females that exhibited breeding behavior (5 had 1+ fledgling, 9 had no fledglings) and breeding territory status for 9 males (7 territory holders, 3 non-territory holders, 2 not observed so not part of this sample).</p>
+<p>Great-tailed grackles are caught in the wild in Tempe, Arizona using a variety of methods (e.g., walk-in trap, bownet, mist net). After capture we immediately process birds by attaching colored leg bands in unique combinations for individual identification, conducting morphological measurements of weight, tarsus length, flattened wing length, tail length, skull length, bill length and fat score (the amount of visible fat under the skin in the clavicle and abdomen as in <span class="citation">Kaiser (1993)</span>). Most grackles are released after completion of color band marking, measurements, and acquiring a blood sample. A subset of grackles are held in aviaries for up to 6 months for behavioral testing, and then released back to the wild at their location of capture.</p>
+<p>From March - August, we monitor the behavior of all color-marked grackles to determine their nesting status. We follow females carrying nesting materials to find their nest. We determine whether the male territory owner is color-marked as well. Then we check each nest approximately every day to determine the status based on the female’s behavior (building, incubation, feeding nestlings, feeding fledglings, failed).</p>
+<p>Individuals included in this sample will be those for which we have measures of condition when they were adults. We will not include individuals whose data were collected as juveniles. As of 30 July 2019, we have fledgling data for 14 females that exhibited breeding behavior (5 had 1+ fledgling, 9 had no fledglings) and breeding territory status for 10 males (7 territory holders, 3 non-territory holders, 2 not observed so not part of this sample). Therefore, the minimum sample size for H2 will be 24. The minimum sample size for H1 will be 72, because that is how many marked individuals we have biometric data for so far. However, we expect to be able to add to the sample size for both H1 and H2 before the end of this investigation in Tempe, Arizona.</p>
 </div>
 <div id="sample-size-rationale" class="section level4">
 <h4><strong>Sample size rationale</strong></h4>
-<p>We will continue to color mark as many grackles as possible, and collect biometric data and fat scores. The minimum sample size for H2 will be 57 marked grackles because that is how many individuals we have biometric and breeding behavior data for so far. However, we expect to be able to catch many more (20-50) before the end of this investigation in Tempe, Arizona that we can use in H1.</p>
+<p>We will continue to color mark as many grackles as possible, and collect biometric data and fat scores. Our current sample of reproductive success is small because the grackles in Tempe nest in very tall palms, making it difficult to determine nest status. However, we plan to collect additional reproductive success data during the breeding season in summer 2020.</p>
 </div>
 <div id="data-collection-stopping-rule" class="section level4">
 <h4><strong>Data collection stopping rule</strong></h4>
@@ -381,23 +381,22 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="dependent-variables" class="section level4">
 <h4><strong>Dependent Variables</strong></h4>
-<p><strong>P1: correlation between fat and the ratio of weight to tarsus length</strong></p>
+<p><strong>P1: correlation between fat and the scaled mass index</strong></p>
 <ol style="list-style-type: decimal">
 <li>Fat score (the amount of visible fat under the skin in the clavicle and abdomen reported as a score from 0 (no fat) to 8 (fat completely covers muscles and underside of the bird); <span class="citation">Kaiser (1993)</span>)</li>
 </ol>
 <p><strong>P2: condition and reproductive success</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Female had one or more fledglings (yes, no)</p></li>
-<li><p>Male held territory containing nests (yes, no)</p></li>
+<li><p>Male held a territory consisting of 1 to 3 clumped palms containing nests (yes, no)</p></li>
 </ol>
 </div>
 <div id="independent-variables" class="section level4">
 <h4><strong>Independent Variables</strong></h4>
-<p><strong>P1: correlation between fat and the ratio of body weight to tarsus length</strong></p>
+<p><strong>P1: correlation between fat and the scaled mass index</strong></p>
 <ol style="list-style-type: decimal">
-<li><p>Ratio of body weight to tarsus length (tarsus length = average of left and right legs as in <span class="citation">Bleeker et al. (2005)</span>)</p></li>
-<li><p>Season (breeding [Sep-Feb], non-breeding [Mar-Aug])</p></li>
-<li><p>Temporarily held in aviaries for behavioral testing at any point during this study (yes, no)</p></li>
+<li><p>Scaled mass index using measures of body weight and tarsus length or flattened wing length (average of left and right as in <span class="citation">Bleeker et al. (2005)</span>). We will choose the measure that is most correlated with body weight (<span class="citation">(<span class="citeproc-not-found" data-reference-id="pieg2009new"><strong>???</strong></span>)</span>).</p></li>
+<li><p>Season (non-breeding [Sep-Feb], breeding [Mar-Aug])</p></li>
 <li><p>Random effect: Experimenter (because several different experimenters measure dependent variables on multiple different birds)</p></li>
 </ol>
 <p><strong>P2: condition and reproductive success</strong></p>
@@ -405,11 +404,11 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 <li>Fat score</li>
 </ol>
 <ul>
-<li>Note 1: if the fat score and the ratio of body weight to tarsus length are positively correlated, then we will use only fat score in the model for P2. If they are not positively correlated, then we will add the ratio as an independent variable in the P2 analysis</li>
-<li>Note 2: if fat score and/or the ratio of body weight to tarsus length vary by season (breeding or non-breeding), then we will only use the data from the breeding season to ensure that less time has elapsed between the collection of condition and reproductive success variables</li>
+<li>Note 1: if the fat score and the scaled mass index are positively correlated, then we will use only fat score in the model for P2. If they are not positively correlated, then we will add the scaled mass index as an independent variable in the P2 analysis</li>
+<li>Note 2: if fat score and/or the scaled mass index vary by season (breeding or non-breeding), then we will only use the data from the breeding season to ensure that less time has elapsed between the collection of condition and reproductive success variables</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
-<li><p>Temporarily held in aviaries for behavioral testing at any point during this study (yes, no)</p></li>
+<li><p>Temporarily held in aviaries for behavioral testing at any point during this study, because this may affect breeding behaviors (yes, no)</p></li>
 <li><p>Random effect: Year (to determine whether conditions in a given breeding season similarly affected all grackle behavior and nest success)</p></li>
 <li><p>Random effect: Bird ID (because there may be multiple measures of reproductive success for each bird)</p></li>
 </ol>
@@ -417,14 +416,34 @@ opts_chunk$set(tidy.opts=list(width.cutoff=60),tidy=TRUE)</code></pre>
 </div>
 <div id="d.-analysis-plan" class="section level3">
 <h3>D. ANALYSIS PLAN</h3>
-<p>We will <strong>exclude</strong> data that was collected from the grackles when they were released from the aviaries to avoid any confounds due to their time in the aviary (e.g., perhaps unlimited nutritious food in the aviaries decreased their fat score). Therefore, all data included in this study will come only from wild-caught grackles (including the birds that were brought into the aviaries on their first capture). When <strong>missing data</strong> occur, the existing data for that individual will be included in the analyses for which their data exist. Analyses will be conducted in R (current version 3.5.2; <span class="citation">R Core Team (2017)</span>). When there is more than one experimenter collecting data, experimenter will be added as a random effect to account for potential differences between experimenters in conducting the sessions.</p>
+<p>We will <strong>exclude</strong> data that was collected from the grackles when they were released from the aviaries to avoid any confounds due to their time in the aviary (e.g., perhaps unlimited nutritious food in the aviaries decreased their fat score). However, to validate that our measures of structural body size (tarsus length or wing length) are precise and accurate, we will measure twice a subset of grackles brought into aviaries - once when they are initially caught, and again up to 6 months later when we release them. We will then calculate the repeatability of these multiple measures. All other data included in this study will come only from wild-caught grackles (including the birds that were brought into the aviaries on their first capture). When <strong>missing data</strong> occur, the existing data for that individual will be included in the analyses for which their data exist. Analyses will be conducted in R (current version 3.5.2; <span class="citation">R Core Team (2017)</span>).</p>
+<div id="ability-to-detect-actual-effects" class="section level4">
+<h4><em>Ability to detect actual effects</em></h4>
+<p>To begin to understand what kinds of effect sizes we will be able to detect given our sample size limitations, we used G*Power (v.3.1, <span class="citation">Faul et al. (2007)</span>, <span class="citation">Faul et al. (2009)</span>) to conduct power analyses based on confidence intervals. G*Power uses pre-set drop down menus and we chose the options that were as close to our analysis methods as possible (listed in each analysis below). Note that there were no explicit options for GLMMs, thus the power analyses are only an approximation of the kinds of effect sizes we can detect. We realize that these power analyses are not fully aligned with our study design and that these kinds of analyses are not appropriate for Bayesian statistics (e.g., our MCMCglmm below), however we are unaware of better options at this time. Additionally, it is difficult to run power analyses because it is unclear what kinds of effect sizes we should expect due to the lack of data on this species for these particular research questions.</p>
+</div>
 <div id="data-checking" class="section level4">
 <h4><em>Data checking</em></h4>
 <p>The data will be checked for overdispersion, underdispersion, zero-inflation, and heteroscedasticity with the DHARMa R package <span class="citation">(Hartig 2019)</span> following methods by <a href="https://cran.r-project.org/web/packages/DHARMa/vignettes/DHARMa.html">Hartig</a>.</p>
 </div>
-<div id="p1-analysis-correlation-between-fat-and-the-ratio-of-weight-to-tarsus-length" class="section level4">
-<h4><em>P1 analysis: correlation between fat and the ratio of weight to tarsus length</em></h4>
-<p><strong>Analysis:</strong> We use a Generalized Linear Mixed Model (GLMM; MCMCglmm function, MCMCglmm package; <span class="citation">(Hadfield 2010)</span>) with a binomial distribution (called “categorical” in MCMCglmm) and log link using 130,000 iterations with a thinning interval of 10, a burnin of 30,000, and minimal priors (V=1, nu=0) <span class="citation">(Hadfield 2014)</span>. We will ensure the GLMM shows acceptable convergence (lag time autocorrelation values &lt;0.01; <span class="citation">(Hadfield 2010)</span>), and adjust parameters if necessary to meet this criterion. We will determine whether an independent variable had an effect or not using the Estimate in the full model.</p>
+<div id="p1-analysis-correlation-between-fat-and-the-scaled-mass-index" class="section level4">
+<h4><em>P1 analysis: correlation between fat and the scaled mass index</em></h4>
+<p><strong>Analysis:</strong> We will calculate the scaled mass index as described by Pieg and Green (2009) using either tarsus or flattened wing length - whichever measure is most correlated with body weight (<span class="citation">(<span class="citeproc-not-found" data-reference-id="pieg2009new"><strong>???</strong></span>)</span>).</p>
+<p>We use a Generalized Linear Mixed Model (GLMM; MCMCglmm function, MCMCglmm package; (Hadfield 2010)) with an ordinal distribution (for categorical variables in MCMCglmm) and probit link using 130,000 iterations with a thinning interval of 10, a burnin of 30,000, and minimal priors (V=1, nu=0) (Hadfield 2014). We will ensure the GLMM shows acceptable convergence (lag time autocorrelation values &lt;0.01; (Hadfield 2010)), and adjust parameters if necessary to meet this criterion. We will determine whether an independent variable had an effect or not using the Estimate in the full model.</p>
+<p>Where we have multiple measures of tarsus or flattened wing length, we will check that our measurements are repeatable using the rptR package (<span class="citation">Stoffel, Nakagawa, and Schielzeth (2017)</span>).</p>
+<p>To roughly estimate our ability to detect actual effects (because these power analyses are designed for frequentist statistics, not Bayesian statistics), we ran a power analysis in G*Power with the following settings: test family=F tests, statistical test=linear multiple regression: Fixed model (R^2 deviation from zero), type of power analysis=a priori, alpha error probability=0.05. We changed the power and the effect size until we reached an output that we project our sample size will be (n=90). The number of predictor variables was restricted to only the fixed effects because this test was not designed for mixed models. The protocol of the power analysis is here:</p>
+<p><em>Input:</em></p>
+<p>Effect size f² = 0.15</p>
+<p>α err prob = 0.05</p>
+<p>Power (1-β err prob) = 0.86</p>
+<p>Number of predictors = 3</p>
+<p><em>Output:</em></p>
+<p>Noncentrality parameter λ = 13.3500000</p>
+<p>Critical F = 2.7119214</p>
+<p>Numerator df = 3</p>
+<p>Denominator df = 85</p>
+<p>Total sample size = 89</p>
+<p>Actual power = 0.8635760</p>
+<p>This means that, with a sample size of 89, we would have an 86% chance of detecting a medium effect (approximated at f<sup>2</sup>=0.15 by <span class="citation">Cohen (1988)</span>).</p>
 <pre class="r"><code>d &lt;- read.csv(&quot;/Users/corina/GTGR/data/data_condition.csv&quot;, header = T, 
     sep = &quot;,&quot;, stringsAsFactors = F)
 
@@ -441,7 +460,7 @@ prior = list(R = list(R1 = list(V = 1, nu = 0), R2 = list(V = 1,
 
 # Data checking for GLMM
 simulationOutput &lt;- simulateResiduals(fittedModel = MCMCglmm(FatScore ~ 
-    Body + Season + Aviary, random = ~Experimenter, family = &quot;poisson&quot;, 
+    Body + Season, random = ~Experimenter, family = &quot;ordinal&quot;, 
     data = d, verbose = F, prior = prior, nitt = 130000, thin = 10, 
     burnin = 30000), n = 250)  #250 simulations, but if want higher precision change n&gt;1000
 simulationOutput$scaledResiduals  #Expect a flat distribution of the overall residuals, and uniformity in y direction if plotted against any predictor
@@ -452,21 +471,46 @@ plot(simulationOutput)  #...there should be no pattern in the data points in the
 plotResiduals(Body, simulationOutput$scaledResiduals)  #plot the residuals against other predictors (in cases when there is more than 1 fixed effect) - can't get this code to work yet
 plotResiduals(Season, simulationOutput$scaledResiduals)  #plot the residuals against other predictors (in cases when there is more than 1 fixed effect) - can't get this code to work yet
 
+# which structural body size measure shows a higher
+# correlation with body mass?
+cor.test(tarsus, mass)
+cor.test(wing, mass)
+
+# repeatability of structural body mass measurements ('Body'
+# represents either wing length or tarsus length, whichever
+# was more correlated with body mass)
+rpt(log(Body) ~ (1 | ID), grname = &quot;ID&quot;, data = d, datatype = &quot;Gaussian&quot;, 
+    nboot = 500, npermut = 500)
+
 # GLMM
-m &lt;- MCMCglmm(FatScore ~ Body + Season + Aviary, random = ~Experimenter, 
-    family = &quot;poisson&quot;, data = d, verbose = F, prior = prior, 
+m &lt;- MCMCglmm(FatScore ~ Body + Season, random = ~Experimenter, 
+    family = &quot;ordinal&quot;, data = d, verbose = F, prior = prior, 
     nitt = 130000, thin = 10, burnin = 30000)
 summary(m)
 # autocorr(m$Sol) #Did fixed effects converge?
 # autocorr(m$VCV) #Did random effects converge?</code></pre>
 </div>
-<div id="p2-analysis-condition-and-repro-success" class="section level4">
-<h4><em>P2 analysis: condition and repro success</em></h4>
-<p>A GLMM is conducted as in P1, except this GLMM used a binomial distribution (called “categorical” in MCMCglmm) due to the response variables being categorized as only yes or no. If fat score and the ratio of body weight to tarsus length are positively correlated in P1, then we will use only fat score as the independent variable in this GLMM. If they are not positively correlated, we will include both as independent variables.</p>
-<pre class="r"><code>d &lt;- read.csv(&quot;/Users/corina/GTGR/data/data_condition.csv&quot;, header = T, 
-    sep = &quot;,&quot;, stringsAsFactors = F)
+<div id="p2-analysis-condition-and-reproductive-success" class="section level4">
+<h4><em>P2 analysis: condition and reproductive success</em></h4>
+<p>To model the effect of body condition on reproductive success, we will use two types of logistic mixed-effect models. Both types are supported in the literature, but are slightly different in the way in which the link function is specified. First, we will model reproductive success using a generalized linear mixed model framework with a logit link function (i.e. <span class="citation">(<span class="citeproc-not-found" data-reference-id="milenkaya2015success"><strong>???</strong></span>)</span>). We will also use a logistic exposure model that has a link function which accounts for the time interval between nest checks when estimating the probability of daily nest survival (<span class="citation">(<span class="citeproc-not-found" data-reference-id="shaffer2004unified"><strong>???</strong></span>)</span>). If fat score and the scaled mass index are positively correlated in P1, then we will use only fat score as the independent variable in this GLMM. If they are not positively correlated, we will include both as independent variables.</p>
+<p>Previous research found a non-linear relationship between reproductive success and body condition variables (<span class="citation">(<span class="citeproc-not-found" data-reference-id="milenkaya2015success"><strong>???</strong></span>)</span>). To check whether this is occuring in our data, we will first plot our raw data to determine if we need to include a non-linear body condition independent variable into our model (i.e. FatScore<sup>2</sup>). Our dependent variable is binary, so to more clearly see the trends in the data, on the x-axis we will bin our condition scores into 5 categories based on standard deviations (sd) around the mean (low = &lt; 2 sd, moderately low = -2 sd to -1 sd, moderate = -1 sd to +1 sd, moderately high = +1 sd to +2 sd, high = &gt; 2 sd). Then on the y-axis we will use the proportion of individuals in each category that had successful nests.</p>
+<p>A power analysis was conducted as above for P1 and the protocol reported here:</p>
+<p><em>Input:</em></p>
+<p>Effect size f² = 0.15</p>
+<p>α err prob = 0.05</p>
+<p>Power (1-β err prob) = 0.90</p>
+<p>Number of predictors = 2</p>
+<p><em>Output:</em></p>
+<p>Noncentrality parameter λ = 13.2000000</p>
+<p>Critical F = 3.1038387</p>
+<p>Numerator df = 2</p>
+<p>Denominator df = 85</p>
+<p>Total sample size = 88</p>
+<p>Actual power = 0.9020264</p>
+<p>This means that, with a sample size of 88, we would have a 90% chance of detecting a medium effect (approximated at f<sup>2</sup>=0.15 by <span class="citation">Cohen (1988)</span>).</p>
+<pre class="r"><code>d &lt;- read.csv (&quot;/Users/corina/GTGR/data/data_condition.csv&quot;, header=T, sep=&quot;,&quot;, stringsAsFactors=F) 
 
-# Factor the random effect variables
+#Factor the random effect variables
 Year &lt;- as.factor(d$Year)
 ID &lt;- as.factor(d$ID)
 
@@ -475,50 +519,92 @@ library(DHARMa)
 library(lme4)
 library(MCMCglmm)
 
-prior = list(R = list(R1 = list(V = 1, nu = 0), R2 = list(V = 1, 
-    nu = 0)), G = list(G1 = list(V = 1, nu = 0)))
+prior = list(R=list(R1=list(V=1,nu=0),R2=list(V=1,nu=0)), G=list(G1=list(V=1,nu=0)))
 
-# Data checking for GLMM: fledglings
-simulationOutput &lt;- simulateResiduals(fittedModel = MCMCglmm(Fledglings ~ 
-    FatScore + Aviary, random = ~Year + ID, family = &quot;categorical&quot;, 
-    data = d, verbose = F, prior = prior, nitt = 130000, thin = 10, 
-    burnin = 30000), n = 250)  #250 simulations, but if want higher precision change n&gt;1000
-simulationOutput$scaledResiduals  #Expect a flat distribution of the overall residuals, and uniformity in y direction if plotted against any predictor
-testDispersion(simulationOutput)  #if under- or over-dispersed, then p-value&lt;0.05, but then check the dispersion parameter and try to determine what in the model could be the cause and address it there, also check for zero inflation
-testZeroInflation(simulationOutput)  #compare expected vs observed zeros, not zero-inflated if p&lt;0.05
-testUniformity(simulationOutput)  #check for heteroscedasticity ('a systematic dependency of the dispersion / variance on another variable in the model' Hartig, https://cran.r-project.org/web/packages/DHARMa/vignettes/DHARMa.html), which is indicated if dots aren't on the red line and p&lt;0.05. Also...
-plot(simulationOutput)  #...there should be no pattern in the data points in the right panel
+#Data checking for GLMM: fledglings 
+simulationOutput &lt;- simulateResiduals(fittedModel = MCMCglmm(Fledglings ~ FatScore + Aviary, random=~Year + ID, family=&quot;categorical&quot;, data=d, verbose=F, prior=prior, nitt=130000, thin=10, burnin=30000), n=250) #250 simulations, but if want higher precision change n&gt;1000
+simulationOutput$scaledResiduals #Expect a flat distribution of the overall residuals, and uniformity in y direction if plotted against any predictor
+testDispersion(simulationOutput) #if under- or over-dispersed, then p-value&lt;0.05, but then check the dispersion parameter and try to determine what in the model could be the cause and address it there, also check for zero inflation
+testZeroInflation(simulationOutput) #compare expected vs observed zeros, not zero-inflated if p&lt;0.05
+testUniformity(simulationOutput) #check for heteroscedasticity (&quot;a systematic dependency of the dispersion / variance on another variable in the model&quot; Hartig, https://cran.r-project.org/web/packages/DHARMa/vignettes/DHARMa.html), which is indicated if dots aren't on the red line and p&lt;0.05. Also...
+plot(simulationOutput) #...there should be no pattern in the data points in the right panel
 
-# Data checking for GLMM: territory holder
-simulationOutput &lt;- simulateResiduals(fittedModel = MCMCglmm(Territory ~ 
-    FatScore + Aviary, random = ~Year + ID, family = &quot;categorical&quot;, 
-    data = d, verbose = F, prior = prior, nitt = 130000, thin = 10, 
-    burnin = 30000), n = 250)  #250 simulations, but if want higher precision change n&gt;1000
-simulationOutput$scaledResiduals  #Expect a flat distribution of the overall residuals, and uniformity in y direction if plotted against any predictor
-testDispersion(simulationOutput)  #if under- or over-dispersed, then p-value&lt;0.05, but then check the dispersion parameter and try to determine what in the model could be the cause and address it there, also check for zero inflation
-testZeroInflation(simulationOutput)  #compare expected vs observed zeros, not zero-inflated if p&lt;0.05
-testUniformity(simulationOutput)  #check for heteroscedasticity ('a systematic dependency of the dispersion / variance on another variable in the model' Hartig, https://cran.r-project.org/web/packages/DHARMa/vignettes/DHARMa.html), which is indicated if dots aren't on the red line and p&lt;0.05. Also...
-plot(simulationOutput)  #...there should be no pattern in the data points in the right panel
+#Data checking for GLMM: territory holder
+simulationOutput &lt;- simulateResiduals(fittedModel = MCMCglmm(Territory ~ FatScore + Aviary, random=~Year + ID, family=&quot;categorical&quot;, data=d, verbose=F, prior=prior, nitt=130000, thin=10, burnin=30000), n=250) #250 simulations, but if want higher precision change n&gt;1000
+simulationOutput$scaledResiduals #Expect a flat distribution of the overall residuals, and uniformity in y direction if plotted against any predictor
+testDispersion(simulationOutput) #if under- or over-dispersed, then p-value&lt;0.05, but then check the dispersion parameter and try to determine what in the model could be the cause and address it there, also check for zero inflation
+testZeroInflation(simulationOutput) #compare expected vs observed zeros, not zero-inflated if p&lt;0.05
+testUniformity(simulationOutput) #check for heteroscedasticity (&quot;a systematic dependency of the dispersion / variance on another variable in the model&quot; Hartig, https://cran.r-project.org/web/packages/DHARMa/vignettes/DHARMa.html), which is indicated if dots aren't on the red line and p&lt;0.05. Also...
+plot(simulationOutput) #...there should be no pattern in the data points in the right panel
 
-# Check to see whether condition variables vary by season
-fs &lt;- glm(FatScore ~ Season, family = &quot;poisson&quot;, data = d)
-bs &lt;- glm(Body ~ Season, family = &quot;poisson&quot;, data = d)
+#Check to see whether condition variables vary by season
+fs &lt;- glm(FatScore ~ Season, family = &quot;ordinal&quot;, data = d)
+bs &lt;- glm(log(Body) ~ Season, family = &quot;gaussian&quot;, data = d)
 
-# GLMM fledglings
+#Mixed-effect logistic regression
+# Females
 m1 &lt;- MCMCglmm(Fledglings ~ FatScore + Aviary, random = ~Year + 
     ID, family = &quot;categorical&quot;, data = d, verbose = F, prior = prior, 
     nitt = 130000, thin = 10, burnin = 30000)
 summary(m1)
-# autocorr(m1$Sol) #Did fixed effects converge?
-# autocorr(m1$VCV) #Did random effects converge?
+#autocorr(m1$Sol) #Did fixed effects converge?
+#autocorr(m1$VCV) #Did random effects converge?
 
-# GLMM territory holder
+
+# Males
 m2 &lt;- MCMCglmm(Territory ~ FatScore + Aviary, random = ~Year + 
     ID, family = &quot;categorical&quot;, data = d, verbose = F, prior = prior, 
     nitt = 130000, thin = 10, burnin = 30000)
 summary(m2)
-# autocorr(m2$Sol) #Did fixed effects converge?
-# autocorr(m2$VCV) #Did random effects converge?</code></pre>
+#autocorr(m2$Sol) #Did fixed effects converge?
+#autocorr(m2$VCV) #Did random effects converge?
+
+
+
+#Logistic exposure model, where “Exposure” is the number of days between nest checks
+## First run code for the exposure link function
+library(MASS)
+logexp &lt;- function(exposure = 1) {
+  ## hack to help with visualization, post-prediction etc etc
+  get_exposure &lt;- function() {
+    if (exists(&quot;..exposure&quot;, env=.GlobalEnv))
+      return(get(&quot;..exposure&quot;, envir=.GlobalEnv))
+    exposure
+  }
+  linkfun &lt;- function(mu) qlogis(mu^(1/get_exposure()))
+  ## FIXME: is there some trick we can play here to allow
+  ##   evaluation in the context of the 'data' argument?
+  linkinv &lt;- function(eta) plogis(eta)^get_exposure()
+  logit_mu_eta &lt;- function(eta) {
+    ifelse(abs(eta)&gt;30,.Machine$double.eps,
+           exp(eta)/(1+exp(eta))^2)
+  }
+  mu.eta &lt;- function(eta) {       
+    get_exposure() * plogis(eta)^(get_exposure()-1) *
+      logit_mu_eta(eta)
+  }
+  valideta &lt;- function(eta) TRUE
+  link &lt;- paste(&quot;logexp(&quot;, deparse(substitute(exposure)), &quot;)&quot;,
+                sep=&quot;&quot;)
+  structure(list(linkfun = linkfun, linkinv = linkinv,
+                 mu.eta = mu.eta, valideta = valideta, 
+                 name = link),
+            class = &quot;link-glm&quot;)
+}
+
+# Females
+m3 &lt;- glm(Fledglings ~ FatScore + Nest number + Aviary + (1|Year) + 
+    (1|ID), family = binomial,
+         family=binomial(link=logexp(d$Exposure)),
+         data = d, start=c(1,0))
+summary(m3)
+
+# Males
+m4 &lt;- glm(Territory ~ FatScore + Aviary + (1|Year) + 
+    (1|ID), family = binomial,
+         family=binomial(link=logexp(d$Exposure)),
+         data = d, start=c(1,0))
+summary(m4)</code></pre>
 </div>
 </div>
 <div id="e.-ethics" class="section level3">
@@ -556,11 +642,14 @@ summary(m2)
 <div id="ref-bleeker2005body">
 <p>Bleeker, Maarten, Sjouke A Kingma, Istvan Szentirmai, Tamas Székely, and Jan Komdeur. 2005. “Body Condition and Clutch Desertion in Penduline Tit Remiz Pendulinus.” <em>Behaviour</em> 142: 1465–78.</p>
 </div>
-<div id="ref-hadfield2010mcmc">
-<p>Hadfield, JD. 2010. “MCMC Methods for Multi-Response Generalized Linear Mixed Models: The Mcmcglmm R Package.” <em>Journal of Statistical Software</em> 33 (2): 1–22.</p>
+<div id="ref-cohen1988statistical">
+<p>Cohen, Jacob. 1988. “Statistical Power Analysis for the Behavioral Sciences 2nd Edn.” Erlbaum Associates, Hillsdale.</p>
 </div>
-<div id="ref-hadfield2014coursenotes">
-<p>———. 2014. “MCMCglmm Course Notes.” <a href="http://cran.r-project.org/web/packages/MCMCglmm/vignettes/CourseNotes.pdf" class="uri">http://cran.r-project.org/web/packages/MCMCglmm/vignettes/CourseNotes.pdf</a>.</p>
+<div id="ref-faul2009statistical">
+<p>Faul, Franz, Edgar Erdfelder, Axel Buchner, and Albert-Georg Lang. 2009. “Statistical Power Analyses Using G* Power 3.1: Tests for Correlation and Regression Analyses.” <em>Behavior Research Methods</em> 41 (4). Springer: 1149–60.</p>
+</div>
+<div id="ref-faul2007g">
+<p>Faul, Franz, Edgar Erdfelder, Albert-Georg Lang, and Axel Buchner. 2007. “G* Power 3: A Flexible Statistical Power Analysis Program for the Social, Behavioral, and Biomedical Sciences.” <em>Behavior Research Methods</em> 39 (2). Springer: 175–91.</p>
 </div>
 <div id="ref-Hartig2019dharma">
 <p>Hartig, Florian. 2019. <em>DHARMa: Residual Diagnostics for Hierarchical (Multi-Level / Mixed) Regression Models</em>. <a href="http://florianhartig.github.io/DHARMa/" class="uri">http://florianhartig.github.io/DHARMa/</a>.</p>
@@ -574,8 +663,14 @@ summary(m2)
 <div id="ref-labocha2014body">
 <p>Labocha, Marta K, Heidi Schutz, and Jack P Hayes. 2014. “Which Body Condition Index Is Best?” <em>Oikos</em> 123 (1). Wiley Online Library: 111–19.</p>
 </div>
+<div id="ref-mcnamara2005theoretical">
+<p>McNamara, John M, Zoltan Barta, Alasdair I Houston, and Philip Race. 2005. “A Theoretical Investigation of the Effect of Predators on Foraging Behaviour and Energy Reserves.” <em>Proceedings of the Royal Society B: Biological Sciences</em> 272 (1566). The Royal Society London: 929–34.</p>
+</div>
 <div id="ref-rcoreteam">
 <p>R Core Team. 2017. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org" class="uri">https://www.R-project.org</a>.</p>
+</div>
+<div id="ref-stoffel2017rptr">
+<p>Stoffel, Martin A, Shinichi Nakagawa, and Holger Schielzeth. 2017. “RptR: Repeatability Estimation and Variance Decomposition by Generalized Linear Mixed-Effects Models.” <em>Methods in Ecology and Evolution</em> 8 (11). Wiley Online Library: 1639–44.</p>
 </div>
 <div id="ref-warnock1998spring">
 <p>Warnock, Nils, and Mary Anne Bishop. 1998. “Spring Stopover Ecology of Migrant Western Sandpipers.” <em>The Condor</em> 100 (3). Oxford University Press: 456–67.</p>
